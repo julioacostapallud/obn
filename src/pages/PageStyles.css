@@ -1,0 +1,129 @@
+.page-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: rgba(26, 26, 46, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(74, 158, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(74, 158, 255, 0.3);
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #4a9eff;
+  letter-spacing: 0.5px;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.clue {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  font-style: italic;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-left: 3px solid #4a9eff;
+}
+
+.clue p {
+  margin: 10px 0;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b0b0b0;
+  margin: 10px 0;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.location-button {
+  background: linear-gradient(135deg, #4a9eff 0%, #6bb3ff 100%);
+  color: #0a0a0f;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 300px;
+}
+
+.location-button:hover {
+  background: linear-gradient(135deg, #6bb3ff 0%, #8cc5ff 100%);
+  box-shadow: 0 6px 20px rgba(74, 158, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.location-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .clue {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
