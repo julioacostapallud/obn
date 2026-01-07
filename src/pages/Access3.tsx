@@ -11,8 +11,8 @@ function Access3() {
             <div className="clue-icon">📚</div>
             <p>Arriba se puede jugar o sentarse a estudiar,</p>
             <p>pero la pista no está donde la ves al mirar.</p>
-            <p>Mirá un poco más abajo, no te quedes con lo primero,</p>
-            <p>donde se junta el polvo y te pica el estornudo entero.</p>
+            <p>Buscá más abajo, no tan a la vista,</p>
+            <p>donde se junta el polvo se esconde la pista.</p>
           </div>
         </div>
         <div className="footer">

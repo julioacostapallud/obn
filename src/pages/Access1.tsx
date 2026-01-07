@@ -9,7 +9,7 @@ function Access1() {
         <div className="content">
           <div className="clue">
             <div className="clue-icon">🔥</div>
-            <p>Aquí no juegues con fuego, prestá bien atención,</p>
+            <p>Aquí no juegues con fuego, prestá mucha atención,</p>
             <p>si esto llega a faltar, no hay comida ni cocción.</p>
             <p>Buscá donde nace la llama, sin tocar ni empujar,</p>
             <p>ahí está la pista que tenés que encontrar.</p>

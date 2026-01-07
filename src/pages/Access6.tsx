@@ -17,10 +17,10 @@ function Access6() {
         <div className="content">
           <div className="clue">
             <div className="clue-icon">🗺️</div>
-            <p>La pista se aleja, no es tiempo de quejar,</p>
+            <p>La pista se aleja, no es tiempo de queja,</p>
             <p>ahora toca seguir y dejarse guiar.</p>
-            <p>Tocá el botón, mirá el mapa sin dudar,</p>
-            <p>el lugar que buscás está por mostrar.</p>
+            <p>Tocá el botón y mirá el mapa sin dudar,</p>
+            <p>que el lugar que buscás está por mostrar.</p>
           </div>
         </div>
         <div className="footer">

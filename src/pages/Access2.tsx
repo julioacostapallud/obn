@@ -11,8 +11,8 @@ function Access2() {
             <div className="clue-icon">❄️</div>
             <p>No busques en cajones ni mochilas esta vez,</p>
             <p>buscá donde el agua se hace dura y el frío es rey.</p>
-            <p>No es lugar para papeles ni cosas que abrigan,</p>
-            <p>en el rincón más frío de la casa se esconden las pistas.</p>
+            <p>No es lugar para papeles, eso seguro está,</p>
+            <p>en el rincón más frío de la casa lo vas a encontrar.</p>
           </div>
         </div>
         <div className="footer">
