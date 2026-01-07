@@ -16,7 +16,11 @@ function Access6() {
         <h2 className="subtitle">Acceso #6</h2>
         <div className="content">
           <div className="clue">
-            <p>"La pista se aleja… y no quiero escuchar ninguna queja."</p>
+            <div className="clue-icon">🗺️</div>
+            <p>La pista se aleja, no es tiempo de quejar,</p>
+            <p>ahora toca seguir y dejarse guiar.</p>
+            <p>Tocá el botón, mirá el mapa sin dudar,</p>
+            <p>el lugar que buscás está por mostrar.</p>
           </div>
         </div>
         <div className="footer">
@@ -24,7 +28,7 @@ function Access6() {
         </div>
         <div className="button-container">
           <button className="location-button" onClick={handleOpenLocation}>
-            ABRIR UBICACIÓN
+            👉 ABRIR UBICACIÓN
           </button>
         </div>
       </div>

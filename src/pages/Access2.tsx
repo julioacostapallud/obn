@@ -8,8 +8,11 @@ function Access2() {
         <h2 className="subtitle">Acceso #2</h2>
         <div className="content">
           <div className="clue">
-            <p>"El papel no nace para el invierno.</p>
-            <p>Aquí reina el hielo: no encierres tus carpetas de escuela."</p>
+            <div className="clue-icon">❄️</div>
+            <p>No busques en cajones ni mochilas esta vez,</p>
+            <p>buscá donde el agua se hace dura y el frío es rey.</p>
+            <p>No es lugar para papeles ni cosas que abrigan,</p>
+            <p>en el rincón más frío de la casa se esconden las pistas.</p>
           </div>
         </div>
         <div className="footer">

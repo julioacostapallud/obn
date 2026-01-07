@@ -8,8 +8,11 @@ function Access5() {
         <h2 className="subtitle">Acceso #5</h2>
         <div className="content">
           <div className="clue">
-            <p>"Tenemos un francés, sí… pero hoy no toca.</p>
-            <p>Hoy elegimos pilotar al japonés."</p>
+            <div className="clue-icon">🚗</div>
+            <p>Tenemos un francés, eso es verdad,</p>
+            <p>pero hoy no es el elegido, no lo vamos a usar.</p>
+            <p>Buscá al japonés que espera sin protestar,</p>
+            <p>en su gaveta la pista se va a encontrar.</p>
           </div>
         </div>
         <div className="footer">

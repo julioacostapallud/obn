@@ -8,8 +8,11 @@ function Access1() {
         <h2 className="subtitle">Acceso #1</h2>
         <div className="content">
           <div className="clue">
-            <p>"Aquí duerme el aliento azul: no juegues con su fuego.</p>
-            <p>Si te falta su soplo, tu banquete quedará crudo."</p>
+            <div className="clue-icon">🔥</div>
+            <p>Aquí no juegues con fuego, prestá bien atención,</p>
+            <p>si esto llega a faltar, no hay comida ni cocción.</p>
+            <p>Buscá donde nace la llama, sin tocar ni empujar,</p>
+            <p>ahí está la pista que tenés que encontrar.</p>
           </div>
         </div>
         <div className="footer">
