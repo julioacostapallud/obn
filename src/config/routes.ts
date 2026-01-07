@@ -13,6 +13,3 @@ export const ROUTES = {
   access6: "/rX7kM2pQ9nT4vL8sA1",
 } as const;
 
-// Mapa inverso para validar rutas
-export const VALID_ROUTES = new Set(Object.values(ROUTES));
-

@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { ROUTES, VALID_ROUTES } from './config/routes';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ROUTES } from './config/routes';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Access1 from './pages/Access1';
