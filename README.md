@@ -107,8 +107,40 @@ location / {
 </IfModule>
 ```
 
-**Vercel/Netlify:**
-Estos servicios detectan automáticamente las SPAs y configuran el fallback correctamente.
+### Despliegue en Netlify
+
+El proyecto incluye un archivo `netlify.toml` configurado para despliegue automático.
+
+#### Opción 1: Despliegue automático desde GitHub
+
+1. Conecta tu repositorio de GitHub a Netlify
+2. Netlify detectará automáticamente la configuración en `netlify.toml`
+3. Los ajustes serán:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+   - **Redirects**: Configurados automáticamente para SPA
+
+#### Opción 2: Despliegue manual con Netlify CLI
+
+```bash
+# Instalar Netlify CLI globalmente
+npm install -g netlify-cli
+
+# Login en Netlify
+netlify login
+
+# Desplegar
+netlify deploy --prod
+```
+
+#### Configuración en netlify.toml
+
+El archivo `netlify.toml` ya está configurado con:
+- Build command y publish directory
+- Redirects para que todas las rutas funcionen correctamente (SPA)
+
+**Vercel:**
+Vercel también detecta automáticamente las SPAs y configura el fallback correctamente.
 
 ## 🎨 Características
 
