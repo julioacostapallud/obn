@@ -5,8 +5,8 @@ import NotFound from './pages/NotFound';
 import Access1 from './pages/Access1';
 import Access2 from './pages/Access2';
 import Access3 from './pages/Access3';
+import Access4 from './pages/Access4';
 import Access5 from './pages/Access5';
-import Access6 from './pages/Access6';
 import './App.css';
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
         <Route path={ROUTES.access1} element={<Access1 />} />
         <Route path={ROUTES.access2} element={<Access2 />} />
         <Route path={ROUTES.access3} element={<Access3 />} />
+        <Route path={ROUTES.access4} element={<Access4 />} />
         <Route path={ROUTES.access5} element={<Access5 />} />
-        <Route path={ROUTES.access6} element={<Access6 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
