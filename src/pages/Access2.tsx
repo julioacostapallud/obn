@@ -1,19 +1,28 @@
+import { useState } from 'react';
 import './PageStyles.css';
+import MedievalIntro from '../components/MedievalIntro';
+import LordMotivation from '../components/LordMotivation';
+import ClueBox from '../components/ClueBox';
 
 function Access2() {
+  const [showContent, setShowContent] = useState(false);
+
+  if (!showContent) {
+    return <MedievalIntro clueNumber={2} onComplete={() => setShowContent(true)} />;
+  }
+
   return (
     <div className="page-container">
       <div className="card">
-        <h1 className="title">🛰️ OPERACIÓN NUEVA BASE</h1>
-        <h2 className="subtitle">Acceso #2</h2>
+        <h1 className="title">⚜️ OPERACIÓN NUEVA BASE</h1>
         <div className="content">
-          <div className="clue">
-            <div className="clue-icon">❄️</div>
+          <LordMotivation motivation="¡Bien hecho, valiente explorador! Sigamos adelante con determinación." />
+          <ClueBox icon="❄️" clueNumber={2}>
             <p>No busques en cajones ni mochilas esta vez,</p>
             <p>buscá donde el agua se hace dura y el frío es rey.</p>
             <p>No es lugar para papeles, eso seguro está,</p>
             <p>en el rincón más frío de la casa lo vas a encontrar.</p>
-          </div>
+          </ClueBox>
         </div>
         <div className="footer">
           <p>No adivines. Interpretá.</p>

@@ -1,0 +1,132 @@
+.lord-dialog-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(244, 232, 208, 0.4);
+  border: 2px solid #8b6f47;
+  border-radius: 8px;
+  box-shadow: 
+    inset 0 0 20px rgba(139, 111, 71, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lord-avatar {
+  flex-shrink: 0;
+  width: 100px;
+  height: 150px;
+  border-radius: 12px;
+  border: 3px solid #8b6f47;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: rgba(244, 232, 208, 0.8);
+  padding: 4px;
+}
+
+.lord-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lord-dialog {
+  flex: 1;
+  min-width: 0;
+}
+
+.lord-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5c3e1f;
+  margin-bottom: 12px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.lord-speech {
+  position: relative;
+  padding: 20px;
+  background: rgba(244, 232, 208, 0.8);
+  border-left: 4px solid #8b6f47;
+  border-radius: 4px;
+  box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+}
+
+.lord-introduction {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4a3a2a;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #8b6f47;
+  font-style: italic;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.lord-introduction p {
+  margin: 8px 0;
+}
+
+.lord-clue {
+  font-size: 19px;
+  line-height: 1.9;
+  color: #4a3a2a;
+  font-style: italic;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.lord-clue p {
+  margin: 10px 0;
+}
+
+.lord-clue .clue-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 600px) {
+  .lord-dialog-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .lord-avatar {
+    width: 80px;
+    height: 120px;
+  }
+
+  .lord-name {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .lord-speech {
+    padding: 15px;
+  }
+
+  .lord-introduction {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .lord-clue {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .lord-clue .clue-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+}
+

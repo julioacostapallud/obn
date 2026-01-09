@@ -1,0 +1,243 @@
+.medieval-intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2a1f14 0%, #3d2e1f 50%, #2a1f14 100%);
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(139, 111, 71, 0.2) 0%, transparent 70%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.medieval-intro-content {
+  text-align: center;
+  position: relative;
+  animation: scrollReveal 2s ease-out;
+}
+
+.medieval-lord-image {
+  width: 300px;
+  height: 450px;
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  border: 4px solid #8b6f47;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(139, 111, 71, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  background: rgba(244, 232, 208, 0.9);
+  padding: 8px;
+  animation: lordAppear 1.5s ease-out;
+}
+
+.medieval-lord-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.medieval-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f4e8d0;
+  margin-bottom: 20px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-shadow: 
+    3px 3px 0px rgba(92, 62, 31, 0.5),
+    0 0 20px rgba(139, 111, 71, 0.6),
+    0 0 40px rgba(139, 111, 71, 0.4);
+  letter-spacing: 3px;
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+.medieval-clue-number {
+  font-size: 28px;
+  font-weight: 600;
+  color: #8b6f47;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-shadow: 
+    2px 2px 0px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(139, 111, 71, 0.5);
+  letter-spacing: 2px;
+  animation: cluePulse 1.5s ease-in-out infinite;
+  margin-bottom: 40px;
+}
+
+.medieval-continue-button {
+  background: linear-gradient(135deg, #8b6f47 0%, #a0825f 100%);
+  color: #f4e8d0;
+  border: 3px solid #5c3e1f;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.5),
+    inset 0 2px 0 rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(139, 111, 71, 0.4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  animation: buttonAppear 0.8s ease-out, buttonGlow 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.medieval-continue-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.medieval-continue-button:hover::before {
+  left: 100%;
+}
+
+.medieval-continue-button:hover {
+  background: linear-gradient(135deg, #a0825f 0%, #b8966f 100%);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.6),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(139, 111, 71, 0.6);
+  transform: translateY(-2px);
+  border-color: #8b6f47;
+}
+
+.medieval-continue-button:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.5),
+    inset 0 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Animaciones */
+@keyframes scrollReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lordAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotateY(-10deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+    filter: blur(0);
+  }
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 
+      3px 3px 0px rgba(92, 62, 31, 0.5),
+      0 0 20px rgba(139, 111, 71, 0.6),
+      0 0 40px rgba(139, 111, 71, 0.4);
+  }
+  100% {
+    text-shadow: 
+      3px 3px 0px rgba(92, 62, 31, 0.5),
+      0 0 30px rgba(139, 111, 71, 0.8),
+      0 0 60px rgba(139, 111, 71, 0.6);
+  }
+}
+
+@keyframes cluePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes buttonAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes buttonGlow {
+  0%, 100% {
+    box-shadow: 
+      0 6px 20px rgba(0, 0, 0, 0.5),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(139, 111, 71, 0.4);
+  }
+  50% {
+    box-shadow: 
+      0 6px 20px rgba(0, 0, 0, 0.5),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2),
+      0 0 30px rgba(139, 111, 71, 0.6);
+  }
+}
+
+.medieval-intro.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.medieval-intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-out;
+}
+
+@media (max-width: 600px) {
+  .medieval-lord-image {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .medieval-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .medieval-clue-number {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+
+  .medieval-continue-button {
+    padding: 16px 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+

@@ -1,0 +1,78 @@
+.lord-motivation-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(244, 232, 208, 0.4);
+  border: 2px solid #8b6f47;
+  border-radius: 8px;
+  box-shadow: 
+    inset 0 0 20px rgba(139, 111, 71, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lord-avatar-section {
+  flex-shrink: 0;
+}
+
+.lord-avatar {
+  width: 100px;
+  height: 150px;
+  border-radius: 12px;
+  border: 3px solid #8b6f47;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: rgba(244, 232, 208, 0.8);
+  padding: 4px;
+}
+
+.lord-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lord-motivation-text {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  background: rgba(244, 232, 208, 0.8);
+  border-left: 4px solid #8b6f47;
+  border-radius: 4px;
+  box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+}
+
+.lord-motivation-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a3a2a;
+  font-style: italic;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .lord-motivation-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .lord-avatar {
+    width: 80px;
+    height: 120px;
+  }
+
+  .lord-motivation-text {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .lord-motivation-text p {
+    font-size: 16px;
+  }
+}
+
