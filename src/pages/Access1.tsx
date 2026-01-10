@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './PageStyles.css';
 import MedievalIntro from '../components/MedievalIntro';
 import LordPresentation from '../components/LordPresentation';
 import ClueBox from '../components/ClueBox';
+import { medievalMusic } from '../utils/medievalMusic';
 
 function Access1() {
   const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Preparar el audio medieval
+    medievalMusic.start();
+  }, []);
 
   if (!showContent) {
     return <MedievalIntro clueNumber={1} onComplete={() => setShowContent(true)} />;
@@ -25,7 +31,7 @@ function Access1() {
           <ClueBox icon="🔥" clueNumber={1}>
             <p>Aquí no juegues con fuego, prestá mucha atención,</p>
             <p>si esto llega a faltar, no hay comida ni cocción.</p>
-            <p>Buscá donde nace la llama, sin tocar ni empujar,</p>
+            <p>Buscá donde nace la llama, con cuidado al buscar,</p>
             <p>ahí está la pista que tenés que encontrar.</p>
           </ClueBox>
         </div>

@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './PageStyles.css';
 import MedievalIntro from '../components/MedievalIntro';
 import LordMotivation from '../components/LordMotivation';
 import ClueBox from '../components/ClueBox';
+import { medievalMusic } from '../utils/medievalMusic';
 
 function Access5() {
   const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Preparar el audio medieval
+    medievalMusic.start();
+  }, []);
 
   const handleOpenLocation = () => {
     window.open(
@@ -24,12 +30,12 @@ function Access5() {
       <div className="card">
         <h1 className="title">⚜️ OPERACIÓN NUEVA BASE</h1>
         <div className="content">
-          <LordMotivation motivation="¡Excelente trabajo! Has llegado al final de tu búsqueda. El tesoro te espera." />
+          <LordMotivation motivation="La búsqueda da un giro: el camino se abre y el rumbo está marcado." />
           <ClueBox icon="🗺️" clueNumber={5}>
-            <p>La pista se aleja, no es tiempo de queja,</p>
-            <p>ahora toca seguir y dejarse guiar.</p>
-            <p>Tocá el botón y mirá el mapa sin dudar,</p>
-            <p>que el lugar que buscás está por mostrar.</p>
+            <p>La aventura sigue, no hay que parar,</p>
+            <p>el camino aparece para ayudar.</p>
+            <p>Al llegar al lugar que tenés que encontrar,</p>
+            <p>usá el interruptor y dejá que pase algo más.</p>
           </ClueBox>
         </div>
         <div className="footer">

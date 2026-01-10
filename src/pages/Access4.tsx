@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './PageStyles.css';
 import MedievalIntro from '../components/MedievalIntro';
 import LordMotivation from '../components/LordMotivation';
 import ClueBox from '../components/ClueBox';
+import { medievalMusic } from '../utils/medievalMusic';
 
 function Access4() {
   const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Preparar el audio medieval
+    medievalMusic.start();
+  }, []);
 
   if (!showContent) {
     return <MedievalIntro clueNumber={4} onComplete={() => setShowContent(true)} />;
@@ -18,10 +24,10 @@ function Access4() {
         <div className="content">
           <LordMotivation motivation="Tu perseverancia es admirable. El final de la búsqueda está cerca." />
           <ClueBox icon="🔑" clueNumber={4}>
-            <p>Tenemos un francés, eso es verdad,</p>
-            <p>pero hoy no es el elegido, no lo vamos a usar.</p>
-            <p>Buscá al japonés que espera sin protestar,</p>
-            <p>la pista está con él, sabrás dónde mirar.</p>
+            <p>Si querés seguir esta búsqueda especial,</p>
+            <p>pensá en algo que sirve para viajar.</p>
+            <p>No camina, no vuela, pero sabe rodar:</p>
+            <p>adentro del León la pista va a estar.</p>
           </ClueBox>
         </div>
         <div className="footer">

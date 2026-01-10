@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './PageStyles.css';
 import MedievalIntro from '../components/MedievalIntro';
 import LordMotivation from '../components/LordMotivation';
 import ClueBox from '../components/ClueBox';
+import { medievalMusic } from '../utils/medievalMusic';
 
 function Access3() {
   const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Preparar el audio medieval
+    medievalMusic.start();
+  }, []);
 
   if (!showContent) {
     return <MedievalIntro clueNumber={3} onComplete={() => setShowContent(true)} />;
@@ -16,7 +22,7 @@ function Access3() {
       <div className="card">
         <h1 className="title">⚜️ OPERACIÓN NUEVA BASE</h1>
         <div className="content">
-          <LordMotivation motivation="Cada paso te acerca más al tesoro. Mantené la mente alerta y los ojos abiertos." />
+          <LordMotivation motivation="Cada paso te acerca más noble aventurero. Mantené la mente alerta y los ojos abiertos." />
           <ClueBox icon="📚" clueNumber={3}>
             <p>Arriba se puede jugar o sentarse a estudiar,</p>
             <p>pero la pista no está donde la ves al mirar.</p>
