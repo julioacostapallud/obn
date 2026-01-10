@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './MedievalIntro.css';
 import { medievalMusic } from '../utils/medievalMusic';
 
