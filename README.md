@@ -1,4 +1,4 @@
-# 🛰️ OPERACIÓN NUEVA BASE
+# ⚜️ La Orden del Nuevo Territorio
 
 Aplicación web de búsqueda del tesoro familiar construida con React + Vite + TypeScript.
 

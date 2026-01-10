@@ -46,9 +46,9 @@ function MedievalIntro({ clueNumber, onComplete }: MedievalIntroProps) {
     <div className={`medieval-intro ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="medieval-intro-content">
         <div className="medieval-lord-image">
-          <img src="/lord.png" alt="Lord QuiLiAc" />
+          <img src="/lordHome.png" alt="Lord QuiLiAc" />
         </div>
-        <div className="medieval-title">⚜️ OPERACIÓN NUEVA BASE</div>
+        <div className="medieval-title">⚜️ La Orden del Nuevo Territorio</div>
         <div className="medieval-clue-number">Pista #{clueNumber}</div>
         {showButton && (
           <button className="medieval-continue-button" onClick={handleContinue}>

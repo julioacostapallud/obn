@@ -1,5 +1,5 @@
 /**
- * Configuración de rutas tokenizadas para OPERACIÓN NUEVA BASE
+ * Configuración de rutas tokenizadas para La Orden del Nuevo Territorio
  * 
  * Para cambiar los tokens, simplemente modifica los valores aquí.
  * Los tokens deben ser difíciles de adivinar (18-32 caracteres alfanuméricos).

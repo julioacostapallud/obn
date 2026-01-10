@@ -21,8 +21,8 @@
 }
 
 .medieval-lord-image {
-  width: 300px;
-  height: 450px;
+  width: 600px;
+  height: 400px;
   margin: 0 auto 30px;
   border-radius: 16px;
   border: 4px solid #8b6f47;
@@ -218,8 +218,8 @@
 
 @media (max-width: 600px) {
   .medieval-lord-image {
-    width: 200px;
-    height: 300px;
+    width: 320px;
+    height: 213px;
     margin-bottom: 20px;
   }
 

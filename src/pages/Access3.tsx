@@ -20,7 +20,7 @@ function Access3() {
   return (
     <div className="page-container">
       <div className="card">
-        <h1 className="title">⚜️ OPERACIÓN NUEVA BASE</h1>
+        <h1 className="title">⚜️ La Orden del Nuevo Territorio</h1>
         <div className="content">
           <LordMotivation motivation="Cada paso te acerca más noble aventurero. Mantené la mente alerta y los ojos abiertos." />
           <ClueBox icon="📚" clueNumber={3}>

@@ -20,7 +20,7 @@ function Access4() {
   return (
     <div className="page-container">
       <div className="card">
-        <h1 className="title">⚜️ OPERACIÓN NUEVA BASE</h1>
+        <h1 className="title">⚜️ La Orden del Nuevo Territorio</h1>
         <div className="content">
           <LordMotivation motivation="Tu perseverancia es admirable. El final de la búsqueda está cerca." />
           <ClueBox icon="🔑" clueNumber={4}>
