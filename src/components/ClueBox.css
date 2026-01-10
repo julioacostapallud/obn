@@ -1,23 +1,26 @@
 .clue-box {
   width: 100%;
   padding: 25px;
-  background: rgba(244, 232, 208, 0.6);
+  background: linear-gradient(135deg, #2a1f14 0%, #3d2e1f 100%);
   border: 2px solid #8b6f47;
   border-left: 6px solid #8b6f47;
   border-radius: 4px;
   box-shadow: 
-    inset 0 0 20px rgba(139, 111, 71, 0.1),
-    0 2px 8px rgba(0, 0, 0, 0.2);
+    inset 0 0 20px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(139, 111, 71, 0.3);
   margin-bottom: 30px;
 }
 
 .clue-header {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
-  color: #5c3e1f;
+  color: #f4e8d0;
   margin-bottom: 15px;
   font-family: 'Georgia', 'Times New Roman', serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(139, 111, 71, 0.5);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -27,25 +30,33 @@
   margin-bottom: 15px;
   display: block;
   text-align: center;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .clue-text {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.9;
-  color: #4a3a2a;
-  font-style: italic;
+  color: #ffffff;
+  font-weight: 700;
   font-family: 'Georgia', 'Times New Roman', serif;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .clue-text p {
   margin: 10px 0;
   font-weight: 700;
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {
   .clue-box {
     padding: 20px 15px;
+  }
+
+  .clue-header {
+    font-size: 22px;
   }
 
   .clue-icon {
@@ -54,7 +65,7 @@
   }
 
   .clue-text {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
   }
 }
